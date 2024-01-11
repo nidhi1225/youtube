@@ -59,17 +59,9 @@ export const HelloWorld: React.FC<z.infer<typeof myCompSchema>> = ({
 	return (
 		<AbsoluteFill style={{backgroundColor: 'white'}}>
 			<AbsoluteFill style={{opacity}}>
-				<AbsoluteFill style={{transform: `translateY(${logoTranslation}px)`}}>
-					<Logo logoColor1={logoColor1} logoColor2={logoColor2} />
+				<AbsoluteFill style={{transform: `translatex(${logoTranslation}px)`}}>
+					<Text>hi its a sample</Text>
 				</AbsoluteFill>
-				{/* Sequences can shift the time for its children! */}
-				<Sequence from={35}>
-					<Title titleText={propOne} titleColor={propTwo} />
-				</Sequence>
-				{/* The subtitle will only enter on the 75th frame. */}
-				<Sequence from={75}>
-					<Subtitle />
-				</Sequence>
 			</AbsoluteFill>
 		</AbsoluteFill>
 	);
